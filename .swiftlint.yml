@@ -3,6 +3,7 @@
 
 #デフォルト時有効で無効にするルール
 disabled_rules:
+    - opening_brace # SwiftUI使ってると定義と括弧の始点が同じ行に来ないため
 
 #デフォルト時無効で有効にするルール
 opt_in_rules:
@@ -92,7 +93,7 @@ opt_in_rules:
     #- vertical_parameter_alignment_on_call # このルールの意味を理解していないため
     - vertical_whitespace_between_cases
     - vertical_whitespace_closing_braces
-    #- vertical_whitespace_opening_braces # SwiftUI使ってると定義と括弧の始点が同じ行に来ない
+    - vertical_whitespace_opening_braces
     #- xct_specific_matcher  # このルールの意味を理解していないため
     - yoda_condition
 
