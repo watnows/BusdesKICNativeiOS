@@ -17,6 +17,7 @@
 		BFA830362940E3300052E4AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830352940E3300052E4AD /* HomeView.swift */; };
 		BFA830382940E40A0052E4AD /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830372940E40A0052E4AD /* TimeTableView.swift */; };
 		BFA8303A2940E4870052E4AD /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830392940E4870052E4AD /* TabButton.swift */; };
+		BFE1AE312977E70E00FAD263 /* ScrollBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1AE302977E70E00FAD263 /* ScrollBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		BFA830352940E3300052E4AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BFA830372940E40A0052E4AD /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
 		BFA830392940E4870052E4AD /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		BFE1AE302977E70E00FAD263 /* ScrollBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		BF4FCB0C29370807001E5B6B /* BusdesKICNativeiOS */ = {
 			isa = PBXGroup;
 			children = (
+				BFE1AE322977E72D00FAD263 /* Parts */,
 				BF4FCB0D29370807001E5B6B /* BusdesKICNativeiOSApp.swift */,
 				BF4FCB0F29370807001E5B6B /* ContentView.swift */,
 				BFA830392940E4870052E4AD /* TabButton.swift */,
@@ -107,6 +110,7 @@
 				BF4FCB1129370809001E5B6B /* Assets.xcassets */,
 				BF4FCB1329370809001E5B6B /* Preview Content */,
 				BFA830372940E40A0052E4AD /* TimeTableView.swift */,
+				BFE1AE302977E70E00FAD263 /* ScrollBar.swift */,
 			);
 			path = BusdesKICNativeiOS;
 			sourceTree = "<group>";
@@ -134,6 +138,13 @@
 				BF4FCB2A29370809001E5B6B /* BusdesKICNativeiOSUITestsLaunchTests.swift */,
 			);
 			path = BusdesKICNativeiOSUITests;
+			sourceTree = "<group>";
+		};
+		BFE1AE322977E72D00FAD263 /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA830382940E40A0052E4AD /* TimeTableView.swift in Sources */,
+				BFE1AE312977E70E00FAD263 /* ScrollBar.swift in Sources */,
 				BFA830362940E3300052E4AD /* HomeView.swift in Sources */,
 				BF4FCB1029370807001E5B6B /* ContentView.swift in Sources */,
 				BFA8303A2940E4870052E4AD /* TabButton.swift in Sources */,
