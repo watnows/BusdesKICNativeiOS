@@ -12,34 +12,25 @@ struct BusTimeTableView: View{
     let time = ["16:03", "17:03", "17:30"]// とりあえずリストにしてます
     let busgoal = ["パナソニック", "パナソニック", "パナソニック"]// timeと同様
     var body: some View{
-        List{
-            Section{
-                ForEach(0 ..< busgoal.count, id: \.self){index in
-                    HStack{
+        VStack {
+            Text(hour)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 50)
+            VStack {
+                ForEach(0 ..< busgoal.count, id: \.self) { index in
+                    HStack {
                         Text(time[index])
                             .padding(.trailing, 15)
                             .font(.system(.caption, design: .monospaced))
                         Text(busgoal[index])
                             .font(.system(.caption, design: .rounded))
                     }
-                    .padding(.bottom, 0)
-                    .padding(.top, 0)
+                    .frame(maxWidth: .infinity)
                 }
-                .padding(.leading, 70)
-                .padding(.bottom, 1)
-                .padding(.top, 1)
+                .padding(.trailing, 60)
                 .listRowSeparatorTint(Color.white)
-            }header: {
-                Text(hour)
-                    .font(.system(.body, design: .rounded))
-                    .foregroundColor(.black)
-                    .padding(.vertical, 8)
-                    .padding(.leading, 20)
             }
         }
-        .listStyle(.plain)
-        .listSectionSeparator(.hidden)
-        .environment(\.defaultMinListRowHeight, 25)
     }
 }
 struct BusTimeTableView_Previews: PreviewProvider{
