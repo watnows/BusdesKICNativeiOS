@@ -10,21 +10,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Test")
+        NavigationView {
             TabView{
                 HomeView()
                     .tabItem{
                         TabButton()
                         Text("Next bus")
                             .clipShape(Capsule())
-                        
                     }
-                    
+                
                 TimeTableView()
                     .tabItem{
                         Text("TimeTable")
                     }
             }
+//            .background(.white)
             .accentColor( Color(hue: 0.01, saturation: 0.71, brightness: 0.80))
+            .navigationTitle("Busdes!")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
