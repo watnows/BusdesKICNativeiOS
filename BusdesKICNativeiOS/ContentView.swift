@@ -1,15 +1,7 @@
-//
-//  ContentView.swift
-//  BusdesKICNativeiOS
-//
-//  Created by 黒川龍之介 on 2022/11/30.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Test")
         NavigationView {
             TabView{
                 HomeView()
@@ -18,14 +10,13 @@ struct ContentView: View {
                         Text("Next bus")
                             .clipShape(Capsule())
                     }
-                
+
                 TimeTableView()
                     .tabItem{
                         Text("TimeTable")
                     }
             }
-//            .background(.white)
-            .accentColor( Color(hue: 0.01, saturation: 0.71, brightness: 0.80))
+            .accentColor(.black)
             .navigationTitle("Busdes!")
             .navigationBarTitleDisplayMode(.inline)
         }

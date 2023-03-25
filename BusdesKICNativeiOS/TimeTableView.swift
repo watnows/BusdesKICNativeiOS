@@ -1,7 +1,6 @@
 // 参考記事 スクロール部分(https://d1v1b.com/swiftui/scroll)
 // tabviewとの連動(https://hack.nikkei.com/blog/advent20201201/)
 // tabviewの下線(https://zenn.dev/chiii/articles/748093ee3b0bf8)
-
 import SwiftUI
 
 struct TimeTableView: View {
@@ -63,6 +62,7 @@ struct TimeTableView: View {
                             List {
                                 ForEach(0 ..< hours.count) {hour in
                                     BusTimeTableView(hours: hour)
+                                        .listRowBackground(Color(red: 242 / 255, green: 242 / 255, blue: 247 / 255))
                                 }
                             }
                             .listStyle(.inset)
