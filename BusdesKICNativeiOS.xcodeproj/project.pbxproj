@@ -16,6 +16,7 @@
 		BF4FCB2929370809001E5B6B /* BusdesKICNativeiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4FCB2829370809001E5B6B /* BusdesKICNativeiOSUITests.swift */; };
 		BF4FCB2B29370809001E5B6B /* BusdesKICNativeiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4FCB2A29370809001E5B6B /* BusdesKICNativeiOSUITestsLaunchTests.swift */; };
 		BFA3733529CF0E41006CFC00 /* BusStopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA3733329CF0E41006CFC00 /* BusStopModel.swift */; };
+		BFA3733E29CF28F6006CFC00 /* HomeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA3733D29CF28F6006CFC00 /* HomeCardView.swift */; };
 		BFA830362940E3300052E4AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830352940E3300052E4AD /* HomeView.swift */; };
 		BFA830382940E40A0052E4AD /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830372940E40A0052E4AD /* TimeTableView.swift */; };
 		BFA8303A2940E4870052E4AD /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830392940E4870052E4AD /* TabButton.swift */; };
@@ -51,6 +52,7 @@
 		BF4FCB2829370809001E5B6B /* BusdesKICNativeiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusdesKICNativeiOSUITests.swift; sourceTree = "<group>"; };
 		BF4FCB2A29370809001E5B6B /* BusdesKICNativeiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusdesKICNativeiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BFA3733329CF0E41006CFC00 /* BusStopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopModel.swift; sourceTree = "<group>"; };
+		BFA3733D29CF28F6006CFC00 /* HomeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardView.swift; sourceTree = "<group>"; };
 		BFA830352940E3300052E4AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BFA830372940E40A0052E4AD /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
 		BFA830392940E4870052E4AD /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
@@ -108,11 +110,12 @@
 				BF4FCB0D29370807001E5B6B /* BusdesKICNativeiOSApp.swift */,
 				BF4FCB0F29370807001E5B6B /* ContentView.swift */,
 				BFA830392940E4870052E4AD /* TabButton.swift */,
-				BFA830352940E3300052E4AD /* HomeView.swift */,
 				BF4FCB1129370809001E5B6B /* Assets.xcassets */,
 				BF4FCB1329370809001E5B6B /* Preview Content */,
 				BFA830372940E40A0052E4AD /* TimeTableView.swift */,
 				91E9F8322996AF21003F7260 /* BusTimeTableView.swift */,
+				BFA830352940E3300052E4AD /* HomeView.swift */,
+				BFA3733D29CF28F6006CFC00 /* HomeCardView.swift */,
 			);
 			path = BusdesKICNativeiOS;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				BFA3733529CF0E41006CFC00 /* BusStopModel.swift in Sources */,
 				BFA830382940E40A0052E4AD /* TimeTableView.swift in Sources */,
 				91E9F8332996AF21003F7260 /* BusTimeTableView.swift in Sources */,
+				BFA3733E29CF28F6006CFC00 /* HomeCardView.swift in Sources */,
 				BFA830362940E3300052E4AD /* HomeView.swift in Sources */,
 				BF4FCB1029370807001E5B6B /* ContentView.swift in Sources */,
 				BFA8303A2940E4870052E4AD /* TabButton.swift in Sources */,

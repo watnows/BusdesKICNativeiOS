@@ -9,9 +9,26 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View{
-        ZStack{
-            RadialGradient(stops: [.init(color: Color(hue: 0.01, saturation: 0.71, brightness: 0.80), location: 0.5), .init(color: Color(hue: 0.7, saturation: 0.02, brightness: 0.98), location: 0.3)], center: .top, startRadius: 200, endRadius: 400)
-            Text("Home")
+        List {
+            ForEach(0..<9) { _ in
+                HomeCardView()
+                    .frame(width: .infinity)
+            }
+            .listRowSeparator(.hidden)
+            .listRowBackground(
+            RoundedRectangle(cornerRadius: 5)
+                .background(.clear)
+                .foregroundColor(.white)
+                .padding(
+                EdgeInsets(
+                    top: 5,
+                    leading: 5,
+                    bottom: 5,
+                    trailing: 5
+                )
+            )
+                .shadow(radius: 2)
+            )
         }
     }
 }
