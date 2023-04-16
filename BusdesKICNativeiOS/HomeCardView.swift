@@ -1,10 +1,3 @@
-//
-//  HomeCardView.swift
-//  BusdesKICNativeiOS
-//
-//  Created by 黒川龍之介 on 2023/03/25.
-//
-
 import SwiftUI
 
 struct HomeCardView: View {
@@ -49,7 +42,6 @@ struct HomeCardView: View {
                 }
             }
         }
-        .frame(width: .infinity)
         .onAppear {
             Task {
                 try await fetchBus(fr: from, to: to)
@@ -60,14 +52,17 @@ struct HomeCardView: View {
 
 struct HomeCardView_Previews: PreviewProvider {
     static var previews: some View {
-        //        HomeCardView()
-        HomeCardView(bus: NextBusModel(moreMin: "約n分後に到着",
-                                       realArrivalTime: "16:56",
-                                       direction: "立命館大学行き",
-                                       busName: "50号系統",
-                                       scheduledTime: "16:56",
-                                       delay: "定時運行",
-                                       busStop: "1",
-                                       requiredTime: 42))
+        HomeCardView(
+            bus: NextBusModel(
+                moreMin: "約n分後に到着",
+                realArrivalTime: "16:56",
+                direction: "立命館大学行き",
+                busName: "50号系統",
+                scheduledTime: "16:56",
+                delay: "定時運行",
+                busStop: "1",
+                requiredTime: 42
+            )
+        )
     }
 }

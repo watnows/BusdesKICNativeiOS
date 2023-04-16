@@ -1,10 +1,3 @@
-//
-//  TabButton.swift
-//  BusdesKICNativeiOS
-//
-//  Created by 黒川龍之介 on 2022/12/08.
-//
-
 import SwiftUI
 
 struct TabButton: View {
