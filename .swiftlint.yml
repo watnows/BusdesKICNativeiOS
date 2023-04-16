@@ -4,7 +4,7 @@
 #デフォルト時有効で無効にするルール
 disabled_rules:
     - opening_brace # SwiftUI使ってると定義と括弧の始点が同じ行に来ないため
-
+    - identifier_name
 #デフォルト時無効で有効にするルール
 opt_in_rules:
     #- anyobject_protocol # このルールの意味を理解していないため
@@ -99,7 +99,6 @@ opt_in_rules:
 
 included:
     - BusdesKICNativeiOS
-    
 excluded:
     - Pods
     

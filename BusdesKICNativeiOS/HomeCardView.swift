@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct HomeCardView: View {
-    @State var from = "京都駅"
-    @State var to = "立命館"
+    @State var bus: NextBusModel
+    @State var from = "京都駅前"
+    @State var to = "立命館大学"
     var startTime = ["16:03", "16:24", "16:55"]
     var stopTime = ["16:33", "16:54", "17:25"]
     var line = "12号系統"
@@ -49,11 +50,24 @@ struct HomeCardView: View {
             }
         }
         .frame(width: .infinity)
+        .onAppear {
+            Task {
+                try await fetchBus(fr: from, to: to)
+            }
+        }
     }
 }
 
 struct HomeCardView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeCardView()
+        //        HomeCardView()
+        HomeCardView(bus: NextBusModel(moreMin: "約n分後に到着",
+                                       realArrivalTime: "16:56",
+                                       direction: "立命館大学行き",
+                                       busName: "50号系統",
+                                       scheduledTime: "16:56",
+                                       delay: "定時運行",
+                                       busStop: "1",
+                                       requiredTime: 42))
     }
 }
