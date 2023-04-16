@@ -20,6 +20,7 @@
 		BFA830362940E3300052E4AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830352940E3300052E4AD /* HomeView.swift */; };
 		BFA830382940E40A0052E4AD /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830372940E40A0052E4AD /* TimeTableView.swift */; };
 		BFA8303A2940E4870052E4AD /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830392940E4870052E4AD /* TabButton.swift */; };
+		BFFDB02329E3A38700C60A0B /* BusTimeTableAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFDB02229E3A38700C60A0B /* BusTimeTableAPIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		BFA830352940E3300052E4AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BFA830372940E40A0052E4AD /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
 		BFA830392940E4870052E4AD /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		BFFDB02229E3A38700C60A0B /* BusTimeTableAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimeTableAPIModel.swift; sourceTree = "<group>"; };
+		BFFDB02429E400EA00C60A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 		BF4FCB0C29370807001E5B6B /* BusdesKICNativeiOS */ = {
 			isa = PBXGroup;
 			children = (
+				BFFDB02429E400EA00C60A0B /* Info.plist */,
 				BFA3733329CF0E41006CFC00 /* BusStopModel.swift */,
 				BF4FCB0D29370807001E5B6B /* BusdesKICNativeiOSApp.swift */,
 				BF4FCB0F29370807001E5B6B /* ContentView.swift */,
@@ -116,6 +120,7 @@
 				91E9F8322996AF21003F7260 /* BusTimeTableView.swift */,
 				BFA830352940E3300052E4AD /* HomeView.swift */,
 				BFA3733D29CF28F6006CFC00 /* HomeCardView.swift */,
+				BFFDB02229E3A38700C60A0B /* BusTimeTableAPIModel.swift */,
 			);
 			path = BusdesKICNativeiOS;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				91E9F8332996AF21003F7260 /* BusTimeTableView.swift in Sources */,
 				BFA3733E29CF28F6006CFC00 /* HomeCardView.swift in Sources */,
 				BFA830362940E3300052E4AD /* HomeView.swift in Sources */,
+				BFFDB02329E3A38700C60A0B /* BusTimeTableAPIModel.swift in Sources */,
 				BF4FCB1029370807001E5B6B /* ContentView.swift in Sources */,
 				BFA8303A2940E4870052E4AD /* TabButton.swift in Sources */,
 				BF4FCB0E29370807001E5B6B /* BusdesKICNativeiOSApp.swift in Sources */,
@@ -465,7 +471,7 @@
 				DEVELOPMENT_TEAM = H6WZ83BNAM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = BusdesKICNativeiOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -494,7 +500,7 @@
 				DEVELOPMENT_TEAM = H6WZ83BNAM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = BusdesKICNativeiOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
