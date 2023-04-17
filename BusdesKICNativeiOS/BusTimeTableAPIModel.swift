@@ -26,21 +26,4 @@ func fetchBus(fr: String, to: String) async throws{
     guard let decodeData = try? JSONDecoder().decode(ApproachInfo.self, from: data) else {
         return
     }
-    print(decodeData)
-//    URLSession.shared.dataTask(with: request) { data, error, _ in
-//        guard let data = data else {
-//            return
-//        }
-//        do {
-//            let decoder = JSONDecoder()
-//            decoder.keyDecodingStrategy = .convertFromSnakeCase
-//            let routeInfo = try decoder.decode(ApproachInfo.self, from: data)
-//            print("!!!!")
-//            print(routeInfo)
-//            print("!!!!")
-//        } catch let error{
-//            print(error)
-//        }
-//    }
-//    .resume()
 }
