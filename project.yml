@@ -1,0 +1,82 @@
+name: BusdesKICNativeiOS
+
+options:
+  bundleIdPrefix: com.watnow.BusdesKICNativeiOS
+  developmentLanguage: ja
+  deploymentTarget: 15.0
+  
+configs:
+  Develop: debug
+  Release: release
+
+schemes:
+  App Develop:
+    build:
+      targets:
+        BusdesKICNativeiOS: all
+    run:
+      config: Develop
+    archive:
+      config: Release
+
+packages:
+  RswiftLibrary:
+      url: https://github.com/mac-cain13/R.swift.git
+      version: 7.3.0
+
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: 13.1.3
+    TARGETED_DEVICE_FAMILY: 1,2
+    SWIFT_VERSION: 5.0
+    CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED: YES
+
+targets:
+  BusdesKICNativeiOS:
+    type: application
+    platform: iOS
+    deploymentTarget: 15.0
+    sources:
+      - path: BusdesKICNativeiOS
+        excludes:
+          - Generated
+      - path: BusdesKICNativeiOS/Generated/R.generated.swift
+        group: BusdesKICNativeiOS/Generated
+        optional: true
+    settings:
+      base:
+        BUNDLE_DISPLAY_NAME: "BusdesKICNativeiOS"
+        CURRENT_PROJECT_BUILD_NUMBER: 1
+        MARKETING_VERSION: 1.0.0
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    info:
+      path: BusdesKICNativeiOS/Info.plist
+      properties:
+        UISupportedInterfaceOrientations~iphone: [UIInterfaceOrientationPortrait]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait]
+        UILaunchStoryboardName: LaunchScreen
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UISceneConfigurationName: Default Configuration
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
+        CFBundleDisplayName: $(BUNDLE_DISPLAY_NAME)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_BUILD_NUMBER)
+        CFBundlePackageType: $(PRODUCT_BUNDLE_PACKAGE_TYPE)
+    dependencies:
+      - package: RswiftLibrary
+    preBuildScripts:
+      - path: ./Scripts/rswift.sh
+        name: R.Swift
+        inputFiles:
+          - $TEMP_DIR/rswift-lastrun
+        basedOnDependencyAnalysis: false
+        outputFiles:
+          - $(SRCROOT)/BusdesKICNativeiOS/Generated/R.generated.swift
+        shell: "/bin/zsh"
+      - path: ./Scripts/swiftlint.sh
+        name: SwiftLint
+        basedOnDependencyAnalysis: false
+        shell: "/bin/zsh"

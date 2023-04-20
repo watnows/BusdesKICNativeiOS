@@ -3,282 +3,177 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		91E9F8332996AF21003F7260 /* BusTimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E9F8322996AF21003F7260 /* BusTimeTableView.swift */; };
-		BF4FCB0E29370807001E5B6B /* BusdesKICNativeiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4FCB0D29370807001E5B6B /* BusdesKICNativeiOSApp.swift */; };
-		BF4FCB1029370807001E5B6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4FCB0F29370807001E5B6B /* ContentView.swift */; };
-		BF4FCB1229370809001E5B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4FCB1129370809001E5B6B /* Assets.xcassets */; };
-		BF4FCB1529370809001E5B6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4FCB1429370809001E5B6B /* Preview Assets.xcassets */; };
-		BF4FCB1F29370809001E5B6B /* BusdesKICNativeiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4FCB1E29370809001E5B6B /* BusdesKICNativeiOSTests.swift */; };
-		BF4FCB2929370809001E5B6B /* BusdesKICNativeiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4FCB2829370809001E5B6B /* BusdesKICNativeiOSUITests.swift */; };
-		BF4FCB2B29370809001E5B6B /* BusdesKICNativeiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4FCB2A29370809001E5B6B /* BusdesKICNativeiOSUITestsLaunchTests.swift */; };
-		BFA3733529CF0E41006CFC00 /* BusStopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA3733329CF0E41006CFC00 /* BusStopModel.swift */; };
-		BFA3733E29CF28F6006CFC00 /* HomeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA3733D29CF28F6006CFC00 /* HomeCardView.swift */; };
-		BFA830362940E3300052E4AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830352940E3300052E4AD /* HomeView.swift */; };
-		BFA830382940E40A0052E4AD /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830372940E40A0052E4AD /* TimeTableView.swift */; };
-		BFA8303A2940E4870052E4AD /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA830392940E4870052E4AD /* TabButton.swift */; };
-		BFFDB02329E3A38700C60A0B /* BusTimeTableAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFDB02229E3A38700C60A0B /* BusTimeTableAPIModel.swift */; };
+		01E7CE92A65B943147DD0481 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F910A5BD4F6394232E4078 /* Preview Assets.xcassets */; };
+		0E65626544FEE73C7D07A7BB /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 6A7EB76DB833109A085A7A81 /* RswiftLibrary */; };
+		19E8A725E34C2586161AFBBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA70A54B4311545BE764E3C /* ContentView.swift */; };
+		1F825102D68D6F55F139D8E5 /* BusdesKICNativeiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB25061D0F8A6FE3100F1145 /* BusdesKICNativeiOSApp.swift */; };
+		383C19DA5A70F10AFA411061 /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7132831D2AF39E7B04772B36 /* TimeTableView.swift */; };
+		3AC3591C5F7726A39231770A /* BusTimeTableAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2D8203303867C21511A38 /* BusTimeTableAPIModel.swift */; };
+		53E2D0F0CC2729AB08362D7E /* BusStopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6ADBA1C6D949C6381C0980 /* BusStopModel.swift */; };
+		7501BC97E7AF5B5A9142FC29 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06746EC0A71895802629CA39 /* TabButton.swift */; };
+		77E901910DA1927CCD883D7D /* BusTimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C5D00073B43E9FF62481C /* BusTimeTableView.swift */; };
+		C130633C21FFDF72CE2B5CA0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66DEC161A01593C0660E56 /* R.generated.swift */; };
+		C334EED3E2AA617FBA368674 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2CFAB5523A148B8FB55209 /* HomeView.swift */; };
+		F5B2FA04E2A269A0FFFAA0E7 /* HomeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA346860047DE77FBF2F9EFC /* HomeCardView.swift */; };
+		F6B11EEB7643446BBE8A6197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65A21FEBF4025C547A17672 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		BF4FCB1B29370809001E5B6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BF4FCB0229370807001E5B6B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BF4FCB0929370807001E5B6B;
-			remoteInfo = BusdesKICNativeiOS;
-		};
-		BF4FCB2529370809001E5B6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BF4FCB0229370807001E5B6B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BF4FCB0929370807001E5B6B;
-			remoteInfo = BusdesKICNativeiOS;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		91E9F8322996AF21003F7260 /* BusTimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimeTableView.swift; sourceTree = "<group>"; };
-		BF4FCB0A29370807001E5B6B /* BusdesKICNativeiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusdesKICNativeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF4FCB0D29370807001E5B6B /* BusdesKICNativeiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusdesKICNativeiOSApp.swift; sourceTree = "<group>"; };
-		BF4FCB0F29370807001E5B6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BF4FCB1129370809001E5B6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BF4FCB1429370809001E5B6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BF4FCB1A29370809001E5B6B /* BusdesKICNativeiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusdesKICNativeiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF4FCB1E29370809001E5B6B /* BusdesKICNativeiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusdesKICNativeiOSTests.swift; sourceTree = "<group>"; };
-		BF4FCB2429370809001E5B6B /* BusdesKICNativeiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusdesKICNativeiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF4FCB2829370809001E5B6B /* BusdesKICNativeiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusdesKICNativeiOSUITests.swift; sourceTree = "<group>"; };
-		BF4FCB2A29370809001E5B6B /* BusdesKICNativeiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusdesKICNativeiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BFA3733329CF0E41006CFC00 /* BusStopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopModel.swift; sourceTree = "<group>"; };
-		BFA3733D29CF28F6006CFC00 /* HomeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardView.swift; sourceTree = "<group>"; };
-		BFA830352940E3300052E4AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		BFA830372940E40A0052E4AD /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
-		BFA830392940E4870052E4AD /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
-		BFFDB02229E3A38700C60A0B /* BusTimeTableAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimeTableAPIModel.swift; sourceTree = "<group>"; };
-		BFFDB02429E400EA00C60A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		05B2D8203303867C21511A38 /* BusTimeTableAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimeTableAPIModel.swift; sourceTree = "<group>"; };
+		06746EC0A71895802629CA39 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		06F83C29869C1EEDEA0E3758 /* BusdesKICNativeiOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BusdesKICNativeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F66DEC161A01593C0660E56 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		2F2CFAB5523A148B8FB55209 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7132831D2AF39E7B04772B36 /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
+		8D6ADBA1C6D949C6381C0980 /* BusStopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopModel.swift; sourceTree = "<group>"; };
+		915C5D00073B43E9FF62481C /* BusTimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimeTableView.swift; sourceTree = "<group>"; };
+		92F910A5BD4F6394232E4078 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9FA70A54B4311545BE764E3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AEE4B8C27D794A6E441F3B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B65A21FEBF4025C547A17672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA346860047DE77FBF2F9EFC /* HomeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardView.swift; sourceTree = "<group>"; };
+		FB25061D0F8A6FE3100F1145 /* BusdesKICNativeiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusdesKICNativeiOSApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BF4FCB0729370807001E5B6B /* Frameworks */ = {
+		9B62745F50E2332E8C5B8371 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF4FCB1729370809001E5B6B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF4FCB2129370809001E5B6B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0E65626544FEE73C7D07A7BB /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BF4FCB0129370807001E5B6B = {
+		56DF867AD3600A3167E31554 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF4FCB0C29370807001E5B6B /* BusdesKICNativeiOS */,
-				BF4FCB1D29370809001E5B6B /* BusdesKICNativeiOSTests */,
-				BF4FCB2729370809001E5B6B /* BusdesKICNativeiOSUITests */,
-				BF4FCB0B29370807001E5B6B /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		BF4FCB0B29370807001E5B6B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BF4FCB0A29370807001E5B6B /* BusdesKICNativeiOS.app */,
-				BF4FCB1A29370809001E5B6B /* BusdesKICNativeiOSTests.xctest */,
-				BF4FCB2429370809001E5B6B /* BusdesKICNativeiOSUITests.xctest */,
+				06F83C29869C1EEDEA0E3758 /* BusdesKICNativeiOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF4FCB0C29370807001E5B6B /* BusdesKICNativeiOS */ = {
+		88CC6BC29E749B0F1D731F76 /* BusdesKICNativeiOS */ = {
 			isa = PBXGroup;
 			children = (
-				BFFDB02429E400EA00C60A0B /* Info.plist */,
-				BFA3733329CF0E41006CFC00 /* BusStopModel.swift */,
-				BF4FCB0D29370807001E5B6B /* BusdesKICNativeiOSApp.swift */,
-				BF4FCB0F29370807001E5B6B /* ContentView.swift */,
-				BFA830392940E4870052E4AD /* TabButton.swift */,
-				BF4FCB1129370809001E5B6B /* Assets.xcassets */,
-				BF4FCB1329370809001E5B6B /* Preview Content */,
-				BFA830372940E40A0052E4AD /* TimeTableView.swift */,
-				91E9F8322996AF21003F7260 /* BusTimeTableView.swift */,
-				BFA830352940E3300052E4AD /* HomeView.swift */,
-				BFA3733D29CF28F6006CFC00 /* HomeCardView.swift */,
-				BFFDB02229E3A38700C60A0B /* BusTimeTableAPIModel.swift */,
+				B65A21FEBF4025C547A17672 /* Assets.xcassets */,
+				FB25061D0F8A6FE3100F1145 /* BusdesKICNativeiOSApp.swift */,
+				8D6ADBA1C6D949C6381C0980 /* BusStopModel.swift */,
+				05B2D8203303867C21511A38 /* BusTimeTableAPIModel.swift */,
+				915C5D00073B43E9FF62481C /* BusTimeTableView.swift */,
+				9FA70A54B4311545BE764E3C /* ContentView.swift */,
+				EA346860047DE77FBF2F9EFC /* HomeCardView.swift */,
+				2F2CFAB5523A148B8FB55209 /* HomeView.swift */,
+				AEE4B8C27D794A6E441F3B46 /* Info.plist */,
+				06746EC0A71895802629CA39 /* TabButton.swift */,
+				7132831D2AF39E7B04772B36 /* TimeTableView.swift */,
+				8D8B08CF08B2BE6C17E13A86 /* Generated */,
+				AAC2C1BACB1F26AAF970BF9F /* Preview Content */,
 			);
 			path = BusdesKICNativeiOS;
 			sourceTree = "<group>";
 		};
-		BF4FCB1329370809001E5B6B /* Preview Content */ = {
+		8D8B08CF08B2BE6C17E13A86 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				BF4FCB1429370809001E5B6B /* Preview Assets.xcassets */,
+				1F66DEC161A01593C0660E56 /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		A4D547951FFAF94A1FEFCF7B = {
+			isa = PBXGroup;
+			children = (
+				88CC6BC29E749B0F1D731F76 /* BusdesKICNativeiOS */,
+				56DF867AD3600A3167E31554 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAC2C1BACB1F26AAF970BF9F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				92F910A5BD4F6394232E4078 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		BF4FCB1D29370809001E5B6B /* BusdesKICNativeiOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				BF4FCB1E29370809001E5B6B /* BusdesKICNativeiOSTests.swift */,
-			);
-			path = BusdesKICNativeiOSTests;
-			sourceTree = "<group>";
-		};
-		BF4FCB2729370809001E5B6B /* BusdesKICNativeiOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BF4FCB2829370809001E5B6B /* BusdesKICNativeiOSUITests.swift */,
-				BF4FCB2A29370809001E5B6B /* BusdesKICNativeiOSUITestsLaunchTests.swift */,
-			);
-			path = BusdesKICNativeiOSUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BF4FCB0929370807001E5B6B /* BusdesKICNativeiOS */ = {
+		3CCF31252E6BF296BB0E2CBE /* BusdesKICNativeiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF4FCB2E29370809001E5B6B /* Build configuration list for PBXNativeTarget "BusdesKICNativeiOS" */;
+			buildConfigurationList = 23A7BB56D4AAF0B5360BF3CA /* Build configuration list for PBXNativeTarget "BusdesKICNativeiOS" */;
 			buildPhases = (
-				BF4FCB0629370807001E5B6B /* Sources */,
-				BF4FCB0729370807001E5B6B /* Frameworks */,
-				BF4FCB0829370807001E5B6B /* Resources */,
-				BFACC134295A245B002580C4 /* ShellScript */,
+				DD156DC895348F251538DA00 /* R.Swift */,
+				D8B274E0AFB2B82867D69D78 /* SwiftLint */,
+				1AF8D32CDB346FC2EFD2C97A /* Sources */,
+				1B72F5E0043732DD991BAE30 /* Resources */,
+				9B62745F50E2332E8C5B8371 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BusdesKICNativeiOS;
+			packageProductDependencies = (
+				6A7EB76DB833109A085A7A81 /* RswiftLibrary */,
+			);
 			productName = BusdesKICNativeiOS;
-			productReference = BF4FCB0A29370807001E5B6B /* BusdesKICNativeiOS.app */;
+			productReference = 06F83C29869C1EEDEA0E3758 /* BusdesKICNativeiOS.app */;
 			productType = "com.apple.product-type.application";
-		};
-		BF4FCB1929370809001E5B6B /* BusdesKICNativeiOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BF4FCB3129370809001E5B6B /* Build configuration list for PBXNativeTarget "BusdesKICNativeiOSTests" */;
-			buildPhases = (
-				BF4FCB1629370809001E5B6B /* Sources */,
-				BF4FCB1729370809001E5B6B /* Frameworks */,
-				BF4FCB1829370809001E5B6B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BF4FCB1C29370809001E5B6B /* PBXTargetDependency */,
-			);
-			name = BusdesKICNativeiOSTests;
-			productName = BusdesKICNativeiOSTests;
-			productReference = BF4FCB1A29370809001E5B6B /* BusdesKICNativeiOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BF4FCB2329370809001E5B6B /* BusdesKICNativeiOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BF4FCB3429370809001E5B6B /* Build configuration list for PBXNativeTarget "BusdesKICNativeiOSUITests" */;
-			buildPhases = (
-				BF4FCB2029370809001E5B6B /* Sources */,
-				BF4FCB2129370809001E5B6B /* Frameworks */,
-				BF4FCB2229370809001E5B6B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BF4FCB2629370809001E5B6B /* PBXTargetDependency */,
-			);
-			name = BusdesKICNativeiOSUITests;
-			productName = BusdesKICNativeiOSUITests;
-			productReference = BF4FCB2429370809001E5B6B /* BusdesKICNativeiOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BF4FCB0229370807001E5B6B /* Project object */ = {
+		FEA023A88DABF56FC3A14A4B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					BF4FCB0929370807001E5B6B = {
-						CreatedOnToolsVersion = 14.1;
-					};
-					BF4FCB1929370809001E5B6B = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = BF4FCB0929370807001E5B6B;
-					};
-					BF4FCB2329370809001E5B6B = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = BF4FCB0929370807001E5B6B;
-					};
 				};
 			};
-			buildConfigurationList = BF4FCB0529370807001E5B6B /* Build configuration list for PBXProject "BusdesKICNativeiOS" */;
-			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			buildConfigurationList = 2903F6E41F19F1449BF4AC91 /* Build configuration list for PBXProject "BusdesKICNativeiOS" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				ja,
 			);
-			mainGroup = BF4FCB0129370807001E5B6B;
-			productRefGroup = BF4FCB0B29370807001E5B6B /* Products */;
+			mainGroup = A4D547951FFAF94A1FEFCF7B;
+			packageReferences = (
+				4530E88EF632DB6229A452DB /* XCRemoteSwiftPackageReference "R.swift" */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF4FCB0929370807001E5B6B /* BusdesKICNativeiOS */,
-				BF4FCB1929370809001E5B6B /* BusdesKICNativeiOSTests */,
-				BF4FCB2329370809001E5B6B /* BusdesKICNativeiOSUITests */,
+				3CCF31252E6BF296BB0E2CBE /* BusdesKICNativeiOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BF4FCB0829370807001E5B6B /* Resources */ = {
+		1B72F5E0043732DD991BAE30 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF4FCB1529370809001E5B6B /* Preview Assets.xcassets in Resources */,
-				BF4FCB1229370809001E5B6B /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF4FCB1829370809001E5B6B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF4FCB2229370809001E5B6B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F6B11EEB7643446BBE8A6197 /* Assets.xcassets in Resources */,
+				01E7CE92A65B943147DD0481 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BFACC134295A245B002580C4 /* ShellScript */ = {
+		D8B274E0AFB2B82867D69D78 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -286,73 +181,68 @@
 			);
 			inputPaths = (
 			);
+			name = SwiftLint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect --format\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellPath = /bin/zsh;
+			shellScript = "if mint list | grep -q 'SwiftLint'; then\n\tmint run swiftlint\nelse\n\techo \"warning: SwiftLint not installed.\"\nfi     \n";
+		};
+		DD156DC895348F251538DA00 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/BusdesKICNativeiOS/Generated/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "if mint list | grep -q 'R.swift'; then\n  mint run R.swift rswift generate \"$SRCROOT/BusdesKICNativeiOS/Generated/R.generated.swift\"\nelse\n  echo \"error: R.swift not installed; run 'mint bootstrap' to install\"\n  return -1\nfi       \n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BF4FCB0629370807001E5B6B /* Sources */ = {
+		1AF8D32CDB346FC2EFD2C97A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFA3733529CF0E41006CFC00 /* BusStopModel.swift in Sources */,
-				BFA830382940E40A0052E4AD /* TimeTableView.swift in Sources */,
-				91E9F8332996AF21003F7260 /* BusTimeTableView.swift in Sources */,
-				BFA3733E29CF28F6006CFC00 /* HomeCardView.swift in Sources */,
-				BFA830362940E3300052E4AD /* HomeView.swift in Sources */,
-				BFFDB02329E3A38700C60A0B /* BusTimeTableAPIModel.swift in Sources */,
-				BF4FCB1029370807001E5B6B /* ContentView.swift in Sources */,
-				BFA8303A2940E4870052E4AD /* TabButton.swift in Sources */,
-				BF4FCB0E29370807001E5B6B /* BusdesKICNativeiOSApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF4FCB1629370809001E5B6B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF4FCB1F29370809001E5B6B /* BusdesKICNativeiOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF4FCB2029370809001E5B6B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF4FCB2929370809001E5B6B /* BusdesKICNativeiOSUITests.swift in Sources */,
-				BF4FCB2B29370809001E5B6B /* BusdesKICNativeiOSUITestsLaunchTests.swift in Sources */,
+				53E2D0F0CC2729AB08362D7E /* BusStopModel.swift in Sources */,
+				3AC3591C5F7726A39231770A /* BusTimeTableAPIModel.swift in Sources */,
+				77E901910DA1927CCD883D7D /* BusTimeTableView.swift in Sources */,
+				1F825102D68D6F55F139D8E5 /* BusdesKICNativeiOSApp.swift in Sources */,
+				19E8A725E34C2586161AFBBE /* ContentView.swift in Sources */,
+				F5B2FA04E2A269A0FFFAA0E7 /* HomeCardView.swift in Sources */,
+				C334EED3E2AA617FBA368674 /* HomeView.swift in Sources */,
+				C130633C21FFDF72CE2B5CA0 /* R.generated.swift in Sources */,
+				7501BC97E7AF5B5A9142FC29 /* TabButton.swift in Sources */,
+				383C19DA5A70F10AFA411061 /* TimeTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		BF4FCB1C29370809001E5B6B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BF4FCB0929370807001E5B6B /* BusdesKICNativeiOS */;
-			targetProxy = BF4FCB1B29370809001E5B6B /* PBXContainerItemProxy */;
-		};
-		BF4FCB2629370809001E5B6B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BF4FCB0929370807001E5B6B /* BusdesKICNativeiOS */;
-			targetProxy = BF4FCB2529370809001E5B6B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		BF4FCB2C29370809001E5B6B /* Debug */ = {
+		12679ACD7558174940014C8B /* Develop */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -387,8 +277,8 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -396,23 +286,48 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Develop;
 		};
-		BF4FCB2D29370809001E5B6B /* Release */ = {
+		93247673875B9AC31A5B6F6D /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_DISPLAY_NAME = BusdesKICNativeiOS;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_BUILD_NUMBER = 1;
+				INFOPLIST_FILE = BusdesKICNativeiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.watnow.BusdesKICNativeiOS.BusdesKICNativeiOS;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Develop;
+		};
+		AC4B3DDFAF87C59640B23A50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -450,190 +365,79 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		BF4FCB2F29370809001E5B6B /* Debug */ = {
+		D963E69D925BE93A410AEDD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BusdesKICNativeiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = H6WZ83BNAM;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				BUNDLE_DISPLAY_NAME = BusdesKICNativeiOS;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_BUILD_NUMBER = 1;
 				INFOPLIST_FILE = BusdesKICNativeiOS/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Kurokawa.KURO.BusdesKICNativeiOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.watnow.BusdesKICNativeiOS.BusdesKICNativeiOS;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		BF4FCB3029370809001E5B6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BusdesKICNativeiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = H6WZ83BNAM;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BusdesKICNativeiOS/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Kurokawa.KURO.BusdesKICNativeiOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		BF4FCB3229370809001E5B6B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H6WZ83BNAM;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Kurokawa.KURO.BusdesKICNativeiOSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusdesKICNativeiOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BusdesKICNativeiOS";
-			};
-			name = Debug;
-		};
-		BF4FCB3329370809001E5B6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H6WZ83BNAM;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Kurokawa.KURO.BusdesKICNativeiOSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusdesKICNativeiOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BusdesKICNativeiOS";
-			};
-			name = Release;
-		};
-		BF4FCB3529370809001E5B6B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H6WZ83BNAM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Kurokawa.KURO.BusdesKICNativeiOSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BusdesKICNativeiOS;
-			};
-			name = Debug;
-		};
-		BF4FCB3629370809001E5B6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H6WZ83BNAM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Kurokawa.KURO.BusdesKICNativeiOSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BusdesKICNativeiOS;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BF4FCB0529370807001E5B6B /* Build configuration list for PBXProject "BusdesKICNativeiOS" */ = {
+		23A7BB56D4AAF0B5360BF3CA /* Build configuration list for PBXNativeTarget "BusdesKICNativeiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF4FCB2C29370809001E5B6B /* Debug */,
-				BF4FCB2D29370809001E5B6B /* Release */,
+				93247673875B9AC31A5B6F6D /* Develop */,
+				D963E69D925BE93A410AEDD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Develop;
 		};
-		BF4FCB2E29370809001E5B6B /* Build configuration list for PBXNativeTarget "BusdesKICNativeiOS" */ = {
+		2903F6E41F19F1449BF4AC91 /* Build configuration list for PBXProject "BusdesKICNativeiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF4FCB2F29370809001E5B6B /* Debug */,
-				BF4FCB3029370809001E5B6B /* Release */,
+				12679ACD7558174940014C8B /* Develop */,
+				AC4B3DDFAF87C59640B23A50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BF4FCB3129370809001E5B6B /* Build configuration list for PBXNativeTarget "BusdesKICNativeiOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BF4FCB3229370809001E5B6B /* Debug */,
-				BF4FCB3329370809001E5B6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BF4FCB3429370809001E5B6B /* Build configuration list for PBXNativeTarget "BusdesKICNativeiOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BF4FCB3529370809001E5B6B /* Debug */,
-				BF4FCB3629370809001E5B6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Develop;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4530E88EF632DB6229A452DB /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A7EB76DB833109A085A7A81 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4530E88EF632DB6229A452DB /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = BF4FCB0229370807001E5B6B /* Project object */;
+	rootObject = FEA023A88DABF56FC3A14A4B /* Project object */;
 }

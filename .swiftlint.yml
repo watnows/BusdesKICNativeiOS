@@ -7,47 +7,19 @@ disabled_rules:
     - identifier_name
 #デフォルト時無効で有効にするルール
 opt_in_rules:
-    #- anyobject_protocol # このルールの意味を理解していないため
-    #- array_init # このルールの意味を理解していないため
     - attributes
-    #- closure_body_length # このルールの意味を理解していないため
     - closure_end_indentation
     - closure_spacing
-    #- collection_alignment # このルールの意味を理解していないため
     - conditional_returns_on_newline
-    #- contains_over_first_not_nil # このルールの意味を理解していないため
-    #- convenience_type # このルールの意味を理解していないため
     - discouraged_object_literal
     - discouraged_optional_boolean
     - discouraged_optional_collection
     - empty_count
     - empty_string
-    #- empty_xctest_method # このルールの意味を理解していないため
-    #- explicit_acl # このルールの意味を理解していないため
-    #- explicit_enum_raw_value # このルールの意味を理解していないため
-    #- explicit_init # このルールの意味を理解していないため
-    #- explicit_self # このルールの意味を理解していないため
-    #- explicit_top_level_acl # このルールの意味を理解していないため
-    #- explicit_type_interface # このルールの意味を理解していないため
-    #- extension_access_modifier # このルールの意味を理解していないため
-    #- fallthrough # このルールの意味を理解していないため
     - fatal_error_message
-    #- file_header # このルールの意味を理解していないため
-    #- file_name # このルールの意味を理解していないため
-    #- first_where # このルールの意味を理解していないため
-    #- force_unwrapping # このルールの意味を理解していないため
-    #- function_default_parameter_at_end # このルールの意味を理解していないため
     - identical_operands
-    #- implicit_return # このルールの意味を理解していないため
-    #- implicitly_unwrapped_optional # このルールの意味を理解していないため
-    #- joined_default_parameter  # このルールの意味を理解していないため
-    #- last_where  # このルールの意味を理解していないため
     - legacy_random
-    #- let_var_whitespace # 空白行を設けたくないこともあるため
     - literal_expression_end_indentation
-    #- lower_acl_than_parent # このルールの意味を理解していないため
-    #- missing_docs # このルールの意味を理解していないため
-    #- modifier_order # このルールの意味を理解していないため
     - multiline_arguments
     - multiline_arguments_brackets
     - multiline_function_chains
@@ -55,52 +27,21 @@ opt_in_rules:
     - multiline_parameters
     - multiline_parameters_brackets
     - nimble_operator
-    #- no_extension_access_modifier # このルールの意味を理解していないため
-    #- no_grouping_extension # このルールの意味を理解していないため
-    #- nslocalizedstring_key # このルールの意味を理解していないため
     - number_separator
-    #- object_literal # このルールの意味を理解していないため
     - operator_usage_whitespace
-    #- overridden_super_call # このルールの意味を理解していないため
-    #- override_in_extension # このルールの意味を理解していないため
-    #- pattern_matching_keywords # このルールの意味を理解していないため
-    #- prefixed_toplevel_constant  # このルールの意味を理解していないため
-    #- private_action # このルールの意味を理解していないため
-    #- private_outlet # このルールの意味を理解していないため
-    #- prohibited_interface_builder # このルールの意味を理解していないため
-    #- prohibited_super_call # このルールの意味を理解していないため
-    #- quick_discouraged_call # このルールの意味を理解していないため
-    #- quick_discouraged_focused_test # このルールの意味を理解していないため
-    #- quick_discouraged_pending_test # このルールの意味を理解していないため
-    #- redundant_nil_coalescing # このルールの意味を理解していないため
-    #- redundant_type_annotation # このルールの意味を理解していないため
-    #- required_deinit # このルールの意味を理解していないため
-    #- required_enum_case # このルールの意味を理解していないため
-    #- single_test_class  # このルールの意味を理解していないため
-    #- sorted_first_last  # このルールの意味を理解していないため
     - sorted_imports
-    #- static_operator # このルールの意味を理解していないため
-    #- strict_fileprivate # このルールの意味を理解していないため
-    #- strong_iboutlet # このルールの意味を理解していないため
     - switch_case_on_newline
     - toggle_bool
-    #- trailing_closure # このルールの意味を理解していないため
-    #- unavailable_function # このルールの意味を理解していないため
-    #- unneeded_parentheses_in_closure_argument # このルールの意味を理解していないため
-    #- untyped_error_in_catch # このルールの意味を理解していないため
-    #- unused_import # このルールの意味を理解していないため
-    #- unused_private_declaration # このルールの意味を理解していないため
-    #- vertical_parameter_alignment_on_call # このルールの意味を理解していないため
     - vertical_whitespace_between_cases
     - vertical_whitespace_closing_braces
     - vertical_whitespace_opening_braces
-    #- xct_specific_matcher  # このルールの意味を理解していないため
     - yoda_condition
 
 included:
-    - BusdesKICNativeiOS
+    - ./BusdesKICNativeiOS
+
 excluded:
-    - Pods
+    - ./BusdesKICNativeiOS/Generated
     
 # 1行あたりの文字数制限の変更
 line_length: 300
