@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,8 @@
 		19E8A725E34C2586161AFBBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA70A54B4311545BE764E3C /* ContentView.swift */; };
 		1F825102D68D6F55F139D8E5 /* BusdesKICNativeiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB25061D0F8A6FE3100F1145 /* BusdesKICNativeiOSApp.swift */; };
 		383C19DA5A70F10AFA411061 /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7132831D2AF39E7B04772B36 /* TimeTableView.swift */; };
-		3AC3591C5F7726A39231770A /* BusTimeTableAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2D8203303867C21511A38 /* BusTimeTableAPIModel.swift */; };
+		3AB485B60672421E28997646 /* BusTimeTableAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A323C62D01122A342918AFF /* BusTimeTableAPI.swift */; };
+		3AC3591C5F7726A39231770A /* NextBusAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B2D8203303867C21511A38 /* NextBusAPI.swift */; };
 		53E2D0F0CC2729AB08362D7E /* BusStopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6ADBA1C6D949C6381C0980 /* BusStopModel.swift */; };
 		7501BC97E7AF5B5A9142FC29 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06746EC0A71895802629CA39 /* TabButton.swift */; };
 		77E901910DA1927CCD883D7D /* BusTimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C5D00073B43E9FF62481C /* BusTimeTableView.swift */; };
@@ -23,11 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05B2D8203303867C21511A38 /* BusTimeTableAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimeTableAPIModel.swift; sourceTree = "<group>"; };
+		05B2D8203303867C21511A38 /* NextBusAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBusAPI.swift; sourceTree = "<group>"; };
 		06746EC0A71895802629CA39 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 		06F83C29869C1EEDEA0E3758 /* BusdesKICNativeiOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BusdesKICNativeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F66DEC161A01593C0660E56 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		2F2CFAB5523A148B8FB55209 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4A323C62D01122A342918AFF /* BusTimeTableAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimeTableAPI.swift; sourceTree = "<group>"; };
 		7132831D2AF39E7B04772B36 /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
 		8D6ADBA1C6D949C6381C0980 /* BusStopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopModel.swift; sourceTree = "<group>"; };
 		915C5D00073B43E9FF62481C /* BusTimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimeTableView.swift; sourceTree = "<group>"; };
@@ -65,7 +67,8 @@
 				B65A21FEBF4025C547A17672 /* Assets.xcassets */,
 				FB25061D0F8A6FE3100F1145 /* BusdesKICNativeiOSApp.swift */,
 				8D6ADBA1C6D949C6381C0980 /* BusStopModel.swift */,
-				05B2D8203303867C21511A38 /* BusTimeTableAPIModel.swift */,
+				4A323C62D01122A342918AFF /* BusTimeTableAPI.swift */,
+				05B2D8203303867C21511A38 /* NextBusAPI.swift */,
 				915C5D00073B43E9FF62481C /* BusTimeTableView.swift */,
 				9FA70A54B4311545BE764E3C /* ContentView.swift */,
 				EA346860047DE77FBF2F9EFC /* HomeCardView.swift */,
@@ -135,8 +138,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 2903F6E41F19F1449BF4AC91 /* Build configuration list for PBXProject "BusdesKICNativeiOS" */;
 			compatibilityVersion = "Xcode 11.0";
@@ -219,7 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				53E2D0F0CC2729AB08362D7E /* BusStopModel.swift in Sources */,
-				3AC3591C5F7726A39231770A /* BusTimeTableAPIModel.swift in Sources */,
+				3AB485B60672421E28997646 /* BusTimeTableAPI.swift in Sources */,
+				3AC3591C5F7726A39231770A /* NextBusAPI.swift in Sources */,
 				77E901910DA1927CCD883D7D /* BusTimeTableView.swift in Sources */,
 				1F825102D68D6F55F139D8E5 /* BusdesKICNativeiOSApp.swift in Sources */,
 				19E8A725E34C2586161AFBBE /* ContentView.swift in Sources */,
