@@ -2,7 +2,7 @@ import SwiftUI
 
 struct BusTimeTableView: View{
     var hours: Int = 0
-    @State var hour = "16時"// ここの時間の取り方がわからないので仮で設定
+    @State var hour = "16"// ここの時間の取り方がわからないので仮で設定
     let time = ["16:03", "17:03", "17:30"]// とりあえずリストにしてます
     let busgoal = ["パナソニック", "パナソニック", "パナソニック"]// timeと同様
     var body: some View{
