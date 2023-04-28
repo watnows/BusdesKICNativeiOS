@@ -9,25 +9,10 @@ struct NextBusModel: Decodable {
     let delay: String // 遅れ情報(全て定時運行)
     let busStop: String // 乗り場番号(今は固定値)
     let requiredTime: Int // 所要時間(今は固定値)
-    
-    enum CodingKeys: String, CodingKey {
-        case moreMin = "more_min"
-        case realArrivalTime = "real_arrival_time"
-        case scheduledTime = "scheduled_time"
-        case busName = "bus_name"
-        case busStop = "bus_stop"
-        case requiredTime = "required_time"
-        case direction
-        case delay
-    }
 }
 
 struct ApproachInfo: Decodable {
     let approachInfos: [NextBusModel]
-    
-    enum CodingKeys:String, CodingKey {
-        case approachInfos = "approach_infos"
-    }
 }
 
 func fetchBus(fr: String, to: String) async throws -> ApproachInfo{
@@ -46,8 +31,10 @@ func fetchBus(fr: String, to: String) async throws -> ApproachInfo{
     
     
     do {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
         let (data, _) = try await URLSession.shared.data(from: url)
-        let busResponse = try JSONDecoder().decode(ApproachInfo.self, from: data)
+        let busResponse = try decoder.decode(ApproachInfo.self, from: data)
         return busResponse
     } catch {
         throw error
