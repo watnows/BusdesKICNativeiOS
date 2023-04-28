@@ -17,6 +17,8 @@
 		53E2D0F0CC2729AB08362D7E /* BusStopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6ADBA1C6D949C6381C0980 /* BusStopModel.swift */; };
 		7501BC97E7AF5B5A9142FC29 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06746EC0A71895802629CA39 /* TabButton.swift */; };
 		77E901910DA1927CCD883D7D /* BusTimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C5D00073B43E9FF62481C /* BusTimeTableView.swift */; };
+		918E510C29F2910D00908394 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E510B29F2910D00908394 /* SettingView.swift */; };
+		918E511029F2994700908394 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E510F29F2994700908394 /* WebView.swift */; };
 		C130633C21FFDF72CE2B5CA0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66DEC161A01593C0660E56 /* R.generated.swift */; };
 		C334EED3E2AA617FBA368674 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2CFAB5523A148B8FB55209 /* HomeView.swift */; };
 		F5B2FA04E2A269A0FFFAA0E7 /* HomeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA346860047DE77FBF2F9EFC /* HomeCardView.swift */; };
@@ -33,6 +35,8 @@
 		7132831D2AF39E7B04772B36 /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
 		8D6ADBA1C6D949C6381C0980 /* BusStopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopModel.swift; sourceTree = "<group>"; };
 		915C5D00073B43E9FF62481C /* BusTimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimeTableView.swift; sourceTree = "<group>"; };
+		918E510B29F2910D00908394 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		918E510F29F2994700908394 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		92F910A5BD4F6394232E4078 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FA70A54B4311545BE764E3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AEE4B8C27D794A6E441F3B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 				AEE4B8C27D794A6E441F3B46 /* Info.plist */,
 				06746EC0A71895802629CA39 /* TabButton.swift */,
 				7132831D2AF39E7B04772B36 /* TimeTableView.swift */,
+				918E510B29F2910D00908394 /* SettingView.swift */,
+				918E510F29F2994700908394 /* WebView.swift */,
 				8D8B08CF08B2BE6C17E13A86 /* Generated */,
 				AAC2C1BACB1F26AAF970BF9F /* Preview Content */,
 			);
@@ -220,13 +226,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				53E2D0F0CC2729AB08362D7E /* BusStopModel.swift in Sources */,
-				3AB485B60672421E28997646 /* BusTimeTableAPI.swift in Sources */,
-				3AC3591C5F7726A39231770A /* NextBusAPI.swift in Sources */,
 				77E901910DA1927CCD883D7D /* BusTimeTableView.swift in Sources */,
 				1F825102D68D6F55F139D8E5 /* BusdesKICNativeiOSApp.swift in Sources */,
 				19E8A725E34C2586161AFBBE /* ContentView.swift in Sources */,
 				F5B2FA04E2A269A0FFFAA0E7 /* HomeCardView.swift in Sources */,
 				C334EED3E2AA617FBA368674 /* HomeView.swift in Sources */,
+				918E510C29F2910D00908394 /* SettingView.swift in Sources */,
 				C130633C21FFDF72CE2B5CA0 /* R.generated.swift in Sources */,
 				7501BC97E7AF5B5A9142FC29 /* TabButton.swift in Sources */,
 				383C19DA5A70F10AFA411061 /* TimeTableView.swift in Sources */,
