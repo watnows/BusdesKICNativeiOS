@@ -17,13 +17,15 @@ struct ApproachInfo: Codable {
 
 func fetchBus(fr: String, to: String) async throws{
     var urlComponents = URLComponents(string: "https://busdes-kic.mercy34.workers.dev/nextbus")!
+    let decoder = JSONDecoder()
+    decoder.keyDecodingStrategy = .convertFromSnakeCase
     urlComponents.queryItems = [
     URLQueryItem(name: "fr", value: fr),
     URLQueryItem(name: "to", value: to)
     ]
     let request = URLRequest(url: urlComponents.url!)
     let (data, response) = try await URLSession.shared.data(for: request)
-    guard let decodeData = try? JSONDecoder().decode(ApproachInfo.self, from: data) else {
+    guard let decodeData = try? decoder.decode(ApproachInfo.self, from: data) else {
         return
     }
 }

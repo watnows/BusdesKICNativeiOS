@@ -72,6 +72,11 @@ struct TimeTableView: View {
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         }
+        .onAppear {
+            Task {
+               try await fetchTimeTable(fr: "京都駅前", to: "立命館大学")
+            }
+        }
     }
 }
 
