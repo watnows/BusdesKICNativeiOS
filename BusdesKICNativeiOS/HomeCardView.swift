@@ -19,6 +19,19 @@ struct HomeCardView: View {
         }
     }
     
+    func parseTime(time : String,requiredTime : Int) -> String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+
+        if let date = dateFormatter.date(from: time) {
+            let calendar = Calendar.current
+            if let newDate = calendar.date(byAdding: .minute, value: requiredTime, to: date) {
+                return dateFormatter.string(from: newDate)
+            }
+        }
+        return ""
+    }
+    
     var body: some View {
         HStack(alignment: .center) {
             VStack {
@@ -45,7 +58,7 @@ struct HomeCardView: View {
                         HStack {
                             Text(bus.approachInfos[index].realArrivalTime)
                             Text("→")
-                            Text(bus.approachInfos[index].realArrivalTime)
+                            Text(parseTime(time: bus.approachInfos[index].realArrivalTime, requiredTime: bus.approachInfos[index].requiredTime)  )
                             Text(bus.approachInfos[index].busName)
                         }
                     }
