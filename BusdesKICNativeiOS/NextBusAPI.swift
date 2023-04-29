@@ -2,7 +2,7 @@ import Foundation
 
 struct NextBusModel: Decodable {
     let moreMin: String // 遅れている時間(全て約n分後に到着）
-    let realArrivalTime: String // 遅れを加味した到着時刻(kic版は遅れがわからない)
+    var realArrivalTime: String // 遅れを加味した到着時刻(kic版は遅れがわからない)
     let direction: String // 行き先
     let busName: String // バスの名前
     let scheduledTime: String // 定時の到着時刻
@@ -12,7 +12,7 @@ struct NextBusModel: Decodable {
 }
 
 struct ApproachInfo: Decodable {
-    let approachInfos: [NextBusModel]
+    var approachInfos: [NextBusModel]
 }
 
 func fetchBus(fr: String, to: String) async throws -> ApproachInfo{

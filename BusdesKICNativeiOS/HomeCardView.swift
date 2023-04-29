@@ -2,7 +2,7 @@ import SwiftUI
 
 struct HomeCardView: View {
     @State var bus: ApproachInfo
-    @State var from = "京都駅前"
+    @State var from = "三条京阪前"
     @State var to = "立命館大学"
     @State private var selectedIndex: Int = 0 // 選択されたインデックスを管理
     
@@ -49,7 +49,7 @@ struct HomeCardView: View {
                         .padding(.trailing, 30)
                 }
                 Group {
-                    Text(bus.approachInfos[selectedIndex].realArrivalTime)
+                    CountDownView(realArrivalTime: $bus.approachInfos[selectedIndex].realArrivalTime)
                         .font(.largeTitle)
                     HStack {
                         Text(bus.approachInfos[selectedIndex].busStop+"番乗り場")
