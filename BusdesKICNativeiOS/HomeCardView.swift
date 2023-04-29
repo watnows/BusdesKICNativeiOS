@@ -4,6 +4,7 @@ struct HomeCardView: View {
     @State var bus: ApproachInfo
     @State var from = "京都駅前"
     @State var to = "立命館大学"
+    @State private var selectedIndex: Int = 0 // 選択されたインデックスを管理
     
     func updateBusData() async {
         do {
@@ -48,18 +49,20 @@ struct HomeCardView: View {
                         .padding(.trailing, 30)
                 }
                 Group {
-                    Text("00:05:12")
+                    Text(bus.approachInfos[selectedIndex].realArrivalTime)
                         .font(.largeTitle)
                     HStack {
-                        Text(bus.approachInfos[0].busStop+"番乗り場")
-                        Text(bus.approachInfos[0].busName)
+                        Text(bus.approachInfos[selectedIndex].busStop+"番乗り場")
+                        Text(bus.approachInfos[selectedIndex].busName)
                     }
                     ForEach(0 ..< bus.approachInfos.count) { index in
                         HStack {
-                            Text(bus.approachInfos[index].realArrivalTime)
-                            Text("→")
-                            Text(parseTime(time: bus.approachInfos[index].realArrivalTime, requiredTime: bus.approachInfos[index].requiredTime)  )
-                            Text(bus.approachInfos[index].busName)
+                            Text(bus.approachInfos[index].realArrivalTime).foregroundColor(selectedIndex == index ? .red : .black)
+                            Text("→").foregroundColor(selectedIndex == index ? .red : .black)
+                            Text(parseTime(time: bus.approachInfos[index].realArrivalTime, requiredTime: bus.approachInfos[index].requiredTime)).foregroundColor(selectedIndex == index ? .red : .black)
+                            Text(bus.approachInfos[index].busName).foregroundColor(selectedIndex == index ? .red : .black)
+                        }.onTapGesture {
+                            selectedIndex = index
                         }
                     }
                 }
