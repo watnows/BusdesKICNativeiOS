@@ -4,11 +4,6 @@ struct HomeCardView: View {
     @State var bus: ApproachInfo
     @State var from = "京都駅前"
     @State var to = "立命館大学"
-//    var startTime = ["16:03", "16:24", "16:55"]
-//    var stopTime = ["16:33", "16:54", "17:25"]
-//    var line = "12号系統"
-//    var stop = "1番乗り場"
-//    var lines = ["12号系統", "15号系統", "12号系統"]
     
     func updateBusData() async {
         do {
@@ -43,15 +38,15 @@ struct HomeCardView: View {
                     Text("00:05:12")
                         .font(.largeTitle)
                     HStack {
-                        Text(bus.approachInfos[0].busStop)
+                        Text(bus.approachInfos[0].busStop+"番乗り場")
                         Text(bus.approachInfos[0].busName)
                     }
-                    ForEach(0 ..< 3) { index in
+                    ForEach(0 ..< bus.approachInfos.count) { index in
                         HStack {
-                            Text(bus.approachInfos[0].realArrivalTime)
+                            Text(bus.approachInfos[index].realArrivalTime)
                             Text("→")
-                            Text(bus.approachInfos[0].realArrivalTime)
-                            Text(bus.approachInfos[0].busName)
+                            Text(bus.approachInfos[index].realArrivalTime)
+                            Text(bus.approachInfos[index].busName)
                         }
                     }
                 }
@@ -70,6 +65,26 @@ struct HomeCardView_Previews: PreviewProvider {
         HomeCardView(
             bus: ApproachInfo(
                 approachInfos: [
+                    NextBusModel(
+                        moreMin: "約n分後に到着",
+                        realArrivalTime: "16:56",
+                        direction: "立命館大学行き",
+                        busName: "50号系統",
+                        scheduledTime: "16:56",
+                        delay: "定時運行",
+                        busStop: "1",
+                        requiredTime: 42
+                    ),
+                    NextBusModel(
+                        moreMin: "約n分後に到着",
+                        realArrivalTime: "16:56",
+                        direction: "立命館大学行き",
+                        busName: "50号系統",
+                        scheduledTime: "16:56",
+                        delay: "定時運行",
+                        busStop: "1",
+                        requiredTime: 42
+                    ),
                     NextBusModel(
                         moreMin: "約n分後に到着",
                         realArrivalTime: "16:56",
