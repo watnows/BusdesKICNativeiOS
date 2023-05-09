@@ -3,9 +3,10 @@ import Foundation
 
 struct CountDownView: View {
     @Binding var realArrivalTime:String
-    @State private var remainingTime: String = ""
+    @State private var remainingTime: String = "00:00:20"
     
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+
+    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
 
     var body: some View {
@@ -20,6 +21,7 @@ struct CountDownView: View {
     private func convertToTodayDate(timeString: String) -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"
+        dateFormatter.timeZone = TimeZone(identifier: "Asia/Tokyo")
 
         guard let timeOnlyDate = dateFormatter.date(from: timeString) else {
             print("時刻の解析に失敗しました")
