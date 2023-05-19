@@ -3,17 +3,41 @@ import SwiftUI
 struct HomeView: View {
     var body: some View{
         List {
-            ForEach(0..<9) { _ in
+            ForEach(0..<1) { _ in
                 HomeCardView(
-                    bus: NextBusModel(
-                        moreMin: "約n分後に到着",
-                        realArrivalTime: "16:56",
-                        direction: "立命館大学行き",
-                        busName: "50号系統",
-                        scheduledTime: "16:56",
-                        delay: "定時運行",
-                        busStop: "1",
-                        requiredTime: 42
+                    bus: ApproachInfo(
+                        approachInfos: [
+                            NextBusModel(
+                                moreMin: "約n分後に到着",
+                                realArrivalTime: "16:56",
+                                direction: "立命館大学行き",
+                                busName: "50号系統",
+                                scheduledTime: "16:56",
+                                delay: "定時運行",
+                                busStop: "1",
+                                requiredTime: 42
+                            ),
+                            NextBusModel(
+                                moreMin: "約n分後に到着",
+                                realArrivalTime: "16:56",
+                                direction: "立命館大学行き",
+                                busName: "50号系統",
+                                scheduledTime: "16:56",
+                                delay: "定時運行",
+                                busStop: "1",
+                                requiredTime: 42
+                            ),
+                            NextBusModel(
+                                moreMin: "約n分後に到着",
+                                realArrivalTime: "16:56",
+                                direction: "立命館大学行き",
+                                busName: "50号系統",
+                                scheduledTime: "16:56",
+                                delay: "定時運行",
+                                busStop: "1",
+                                requiredTime: 42
+                            )
+                        ]
                     )
                 )
             }
