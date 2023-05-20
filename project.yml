@@ -10,7 +10,7 @@ configs:
   Release: release
 
 schemes:
-  App Develop:
+  BusdesKICNativeiOS:
     build:
       targets:
         BusdesKICNativeiOS: all

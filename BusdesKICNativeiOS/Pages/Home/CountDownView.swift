@@ -1,13 +1,9 @@
 import SwiftUI
-import Foundation
 
 struct CountDownView: View {
-    @Binding var realArrivalTime:String
+    @Binding var realArrivalTime: String
     @State private var remainingTime: String = "00:00:20"
-    
-
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-    
 
     var body: some View {
         VStack {
@@ -17,7 +13,7 @@ struct CountDownView: View {
                calculateRemainingTime()
         })
     }
-    
+
     private func convertToTodayDate(timeString: String) -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"
