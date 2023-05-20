@@ -1,5 +1,5 @@
-if which swiftlint >/dev/null; then
- mint run  swiftlint
+if mint list | grep -q 'SwiftLint'; then
+    mint run swiftlint
 else
-  echo "SwiftLint does not exist"
+    echo "warning: SwiftLint not installed."
 fi

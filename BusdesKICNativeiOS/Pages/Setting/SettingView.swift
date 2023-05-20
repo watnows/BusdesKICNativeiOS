@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct Setttingview: View {
+struct SettingView: View {
     let campusbusschedule = "https://mercy34mercy.github.io/bustimer_kic/shuttle/schedule.jpg"
     let  canpasbustimetable = "https://mercy34mercy.github.io/bustimer_kic/shuttle/timetable.jpg"
     let terms = "https://mercy34mercy.github.io/bustimer_kic/policy/"
@@ -45,8 +45,8 @@ struct MainWebView: View {
         MyWebView(url: url)
     }
 }
-struct Setttingview_Previews: PreviewProvider {
+struct SetttingView_Previews: PreviewProvider {
     static var previews: some View {
-        Setttingview()
+        SettingView()
     }
 }

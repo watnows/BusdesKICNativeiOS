@@ -17,19 +17,14 @@ struct ApproachInfo: Decodable {
 
 func fetchBus(fr: String, to: String) async throws -> ApproachInfo{
     var urlComponents = URLComponents(string: "https://bustimer.azurewebsites.net/nextbus")!
-    
     urlComponents.queryItems = [
-    URLQueryItem(name: "fr", value: fr),
-    URLQueryItem(name: "to", value: to)
+        URLQueryItem(name: "fr", value: fr),
+        URLQueryItem(name: "to", value: to)
     ]
-    
     // クエリパラメータが追加された URL を生成
     guard let url = urlComponents.url else {
         throw URLError(.badURL)
     }
-    
-    
-    
     do {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -39,18 +34,4 @@ func fetchBus(fr: String, to: String) async throws -> ApproachInfo{
     } catch {
         throw error
     }
-    
-
-//    let decoder = JSONDecoder()
-//    decoder.keyDecodingStrategy = .convertFromSnakeCase
-//    urlComponents.queryItems = [
-//    URLQueryItem(name: "fr", value: fr),
-//    URLQueryItem(name: "to", value: to)
-//    ]
-//    let request = URLRequest(url: urlComponents.url!)
-//    let (data, response) = try await URLSession.shared.data(for: request)
-//    guard let decodeData = try? decoder.decode(ApproachInfo.self, from: data) else {
-//        return
-//    }
-//    return decodeData
 }

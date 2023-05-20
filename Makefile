@@ -16,7 +16,7 @@ setup: # Install tools
 
 .PHONY: install-mint
 install-mint: # Install Mint dependencies
-	git clone --branch 0.16.0 https://github.com/yonaskolb/Mint
+	git clone --branch 0.17.5 https://github.com/yonaskolb/Mint
 	cd Mint
 	make
 	cd ..
@@ -33,4 +33,4 @@ open: # Open workspace in Xcode
 
 .PHONY: clean
 clean: # Delete cache
-	xcodebuild clean -alltargets
+	xcodebuild clean -project ${PROJECT_NAME}

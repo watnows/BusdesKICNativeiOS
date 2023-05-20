@@ -5,8 +5,8 @@ struct HomeCardView: View {
     @State var from = "三条京阪前"
     @State var to = "立命館大学"
     @State private var selectedIndex: Int = 0 // 選択されたインデックスを管理
-    @State var stringArray = ["20:00","20:10","20:20"]
-    
+    @State var stringArray = ["20:00", "20:10", "20:20"]
+
     func updateBusData() async {
         do {
             let busResponse = try await fetchBus(fr: from, to: to)
@@ -20,8 +20,8 @@ struct HomeCardView: View {
             print("Error fetching bus data: \(error)")
         }
     }
-    
-    func parseTime(time : String,requiredTime : Int) -> String{
+
+    func parseTime(time: String, requiredTime: Int) -> String{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"
 
@@ -33,7 +33,7 @@ struct HomeCardView: View {
         }
         return ""
     }
-    
+
     var body: some View {
         HStack(alignment: .center) {
             VStack {
@@ -50,10 +50,10 @@ struct HomeCardView: View {
                         .padding(.trailing, 30)
                 }
                 Group {
-                    CountDownView(realArrivalTime:$bus.approachInfos[selectedIndex].realArrivalTime)
+                    CountDownView(realArrivalTime: $bus.approachInfos[selectedIndex].realArrivalTime)
                         .font(.largeTitle)
                     HStack {
-                        Text(bus.approachInfos[selectedIndex].busStop+"番乗り場")
+                        Text(bus.approachInfos[selectedIndex].busStop + "番乗り場")
                         Text(bus.approachInfos[selectedIndex].busName)
                     }
                     ForEach(0 ..< bus.approachInfos.count) { index in
